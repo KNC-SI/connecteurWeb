@@ -39,17 +39,19 @@ namespace RunScriptOvh
                     {
                         ITrigger trigger = TriggerBuilder.Create()
                          .WithIdentity("IDGJob", "IDG")
-                           .StartAt(firstRun).EndAt(lastRun).WithCronSchedule(""+intervalInHour+ " 0 "+hourStart+"-"+hourEnd+ " ? * "+ jour)
+                           .WithCronSchedule(""+intervalInHour+ " 0 "+hourStart+"-"+hourEnd+ " ? * "+ jour)
+                           .ForJob(job)
                            .Build();
-                        await scheduler.ScheduleJob(job, trigger);
+                        //await scheduler.ScheduleJob(job, trigger);
                     }
                     else if (type == "Minutes")
                     {
                         ITrigger trigger = TriggerBuilder.Create()
                          .WithIdentity("IDGJob", "IDG")
                            .StartAt(firstRun).EndAt(lastRun).WithCronSchedule(" 0 "+(0/intervalInHour)+" "+ hourStart + " - " + hourEnd + " ? * " + jour)
+                           .ForJob(job)
                            .Build();
-                        await scheduler.ScheduleJob(job, trigger);
+                       // await scheduler.ScheduleJob(job, trigger);
                     }
                     else
                     {
