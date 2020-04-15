@@ -19,7 +19,7 @@ namespace RunScriptOvh
         {
             Form2 fm = new Form2();
             fm.ShowDialog();
-            await Console.Out.WriteLineAsync("Greetings from HelloJob!");
+           // await Console.Out.WriteLineAsync("Greetings from HelloJob!");
             //throw new System.NotImplementedException();
 
         }
