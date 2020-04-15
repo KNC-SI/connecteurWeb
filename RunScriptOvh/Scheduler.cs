@@ -48,10 +48,13 @@ namespace RunScriptOvh
                     {
                         ITrigger trigger = TriggerBuilder.Create()
                          .WithIdentity("IDGJob", "IDG")
-                           .StartAt(firstRun).EndAt(lastRun).WithCronSchedule(" 0 "+(0/intervalInHour)+" "+ hourStart + " - " + hourEnd + " ? * " + jour)
-                           .ForJob(job)
+                           .StartAt(firstRun).EndAt(lastRun)
+                           .WithCronSchedule("0 0/2 * ? * *")
+                           //.WithCronSchedule(" 0 "+(0/intervalInHour)+" "+ hourStart + "-" + hourEnd + " ? * " + jour)
+                           //.ForJob(job)
                            .Build();
-                       // await scheduler.ScheduleJob(job, trigger);
+                       // await 
+                        scheduler.ScheduleJob(job, trigger);
                     }
                     else
                     {
