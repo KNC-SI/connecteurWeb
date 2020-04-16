@@ -19,7 +19,7 @@ namespace RunScriptOvh
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Parametres.key.Close();
+            
             this.Hide();
         }
 
@@ -124,6 +124,68 @@ namespace RunScriptOvh
 
 
 
+
+        }
+
+        private void PlanificationGammes_Load(object sender, EventArgs e)
+        {
+            foreach (string item in Parametres.list)
+            {
+                comboBox1.Items.Add(item);
+
+            }
+
+            try
+            {
+                comboBox1.SelectedItem = "Minutes";
+                if (Parametres.key.GetValue("intervalGamme") != null)
+                {
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayGamme") + "/" + (string)Parametres.key.GetValue("monthGamme") + "/" + (string)Parametres.key.GetValue("yearGamme") + " a " + (string)Parametres.key.GetValue("hourGamme") + ":" + (string)Parametres.key.GetValue("minGamme");
+                    textBox1.Text = (string)Parametres.key.GetValue("intervalGamme");
+                    dataGridView1.Rows.Add(Parametres.key.GetValue("debutGamme"), Parametres.key.GetValue("finGamme"));
+                    comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourGamme");
+                    if ("MON" == (string)Parametres.key.GetValue("LundiGamme"))
+                    {
+
+                        checkBox1.Checked = true;
+                    }
+                    if ("TUE" == (string)Parametres.key.GetValue("MardiGamme"))
+                    {
+                        checkBox2.Checked = true;
+
+                    }
+                    if ("WED" == (string)Parametres.key.GetValue("MecrediGamme"))
+                    {
+                        checkBox3.Checked = true;
+
+                    }
+                    if ("THU" == (string)Parametres.key.GetValue("JeudiGamme"))
+                    {
+                        checkBox4.Checked = true;
+
+                    }
+                    if ("FRI" == (string)Parametres.key.GetValue("VendrediGamme"))
+                    {
+                        checkBox5.Checked = true;
+
+                    }
+                    if ("SAT" == (string)Parametres.key.GetValue("SamediGamme"))
+                    {
+                        checkBox6.Checked = true;
+
+                    }
+                    if ("SUN" == (string)Parametres.key.GetValue("DimancheGamme"))
+                    {
+                        checkBox7.Checked = true;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }

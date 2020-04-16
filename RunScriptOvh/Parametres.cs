@@ -23,6 +23,7 @@ namespace RunScriptOvh
         static public List<string> ValueKeyPrix = new List<string>();
         static public List<string> ValueKeyStock = new List<string>();
         static public RegistryKey key = Registry.CurrentUser.CreateSubKey(@"C:\Users\choui\Desktop\test");
+
         static public void RunCommand(string NameCron)
         {
             using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))
@@ -31,8 +32,10 @@ namespace RunScriptOvh
                 client.RunCommand("/usr/local/php7.2/bin/php /homez.727/francoiszi/dev/connect/symfony/bin/console app:cron:" + NameCron);
 
                 client.Disconnect();
+
             }
         }
+
         static public void deleteKey(List<string> list)
         {
             foreach (var item in list)
@@ -41,5 +44,16 @@ namespace RunScriptOvh
             }
             
         }
+        static public void DerniereExecution(String name)
+        {
+            DateTime now = DateTime.Now;
+            Parametres.key.SetValue("min" + name, now.Minute.ToString());
+            Parametres.key.SetValue("hour" + name, now.Hour.ToString());
+            Parametres.key.SetValue("day" + name, now.Day.ToString());
+            Parametres.key.SetValue("month" + name, now.Month.ToString());
+            Parametres.key.SetValue("year" + name, now.Year.ToString());
+
+        }
+        
     }
 }

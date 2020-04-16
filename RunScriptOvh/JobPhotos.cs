@@ -13,7 +13,7 @@ namespace RunScriptOvh
         {
             string NameCron = "photos";
             Parametres.RunCommand(NameCron);
-            //async
+            Parametres.DerniereExecution("Photos");
         }
     }
 }

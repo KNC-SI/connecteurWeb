@@ -13,7 +13,7 @@ namespace RunScriptOvh
         {
             string NameCron = "copytoftp";
             Parametres.RunCommand(NameCron);
-            //async
+            Parametres.DerniereExecution("CopiePhotos");
         }
     }
 }

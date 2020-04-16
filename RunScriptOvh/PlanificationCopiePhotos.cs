@@ -19,7 +19,7 @@ namespace RunScriptOvh
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Parametres.key.Close();
+            
             this.Hide();
         }
 
@@ -124,6 +124,68 @@ namespace RunScriptOvh
 
 
 
+
+        }
+
+        private void PlanificationCopiePhotos_Load(object sender, EventArgs e)
+        {
+            foreach (string item in Parametres.list)
+            {
+                comboBox1.Items.Add(item);
+
+            }
+
+            try
+            {
+                comboBox1.SelectedItem = "Minutes";
+                if (Parametres.key.GetValue("intervalCopiePhotos") != null)
+                {
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayCopiePhotos") + "/" + (string)Parametres.key.GetValue("monthCopiePhotos") + "/" + (string)Parametres.key.GetValue("yearCopiePhotos") + " a " + (string)Parametres.key.GetValue("hourCopiePhotos") + ":" + (string)Parametres.key.GetValue("minCopiePhotos");
+                    textBox1.Text = (string)Parametres.key.GetValue("intervalCopiePhotos");
+                    dataGridView1.Rows.Add(Parametres.key.GetValue("debutCopiePhotos"), Parametres.key.GetValue("finCopiePhotos"));
+                    comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourCopiePhotos");
+                    if ("MON" == (string)Parametres.key.GetValue("LundiCopiePhotos"))
+                    {
+
+                        checkBox1.Checked = true;
+                    }
+                    if ("TUE" == (string)Parametres.key.GetValue("MardiCopiePhotos"))
+                    {
+                        checkBox2.Checked = true;
+
+                    }
+                    if ("WED" == (string)Parametres.key.GetValue("MecrediCopiePhotos"))
+                    {
+                        checkBox3.Checked = true;
+
+                    }
+                    if ("THU" == (string)Parametres.key.GetValue("JeudiCopiePhotos"))
+                    {
+                        checkBox4.Checked = true;
+
+                    }
+                    if ("FRI" == (string)Parametres.key.GetValue("VendrediCopiePhotos"))
+                    {
+                        checkBox5.Checked = true;
+
+                    }
+                    if ("SAT" == (string)Parametres.key.GetValue("SamediCopiePhotos"))
+                    {
+                        checkBox6.Checked = true;
+
+                    }
+                    if ("SUN" == (string)Parametres.key.GetValue("DimancheCopiePhotos"))
+                    {
+                        checkBox7.Checked = true;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }

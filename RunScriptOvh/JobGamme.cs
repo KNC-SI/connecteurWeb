@@ -13,7 +13,7 @@ namespace RunScriptOvh
         {
             string NameCron = "models";
             Parametres.RunCommand(NameCron);
-            //async
+            Parametres.DerniereExecution("Gamme");
         }
     }
 }

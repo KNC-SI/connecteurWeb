@@ -23,6 +23,7 @@ namespace RunScriptOvh
 
         private void planification_Load(object sender, EventArgs e)
         {
+            
             foreach (string item in Parametres.list)
             {
                 comboBox1.Items.Add(item);
@@ -34,6 +35,7 @@ namespace RunScriptOvh
                 comboBox1.SelectedItem = "Minutes";
                 if (Parametres.key.GetValue("intervalArticle") != null)
                 {
+                    label6.Text = "Le "+ (string)Parametres.key.GetValue("dayArticle") + "/"+ (string)Parametres.key.GetValue("monthArticle") + "/"+ (string)Parametres.key.GetValue("yearArticle") + " a "+ (string)Parametres.key.GetValue("hourArticle") + ":"+ (string)Parametres.key.GetValue("minArticle");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalArticle");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutArticle"), Parametres.key.GetValue("finArticle"));
                     comboBox1.SelectedItem= (string)Parametres.key.GetValue("intervalMinOrHourArticle");
@@ -93,7 +95,7 @@ namespace RunScriptOvh
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Parametres.key.Close();
+            
             this.Hide();
         }
 

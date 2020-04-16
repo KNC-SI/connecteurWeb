@@ -13,7 +13,7 @@ namespace RunScriptOvh
         {
             string NameCron = "attributs";
             Parametres.RunCommand(NameCron);
-            //async
+            Parametres.DerniereExecution("AttributsCaracteristiques");
         }
     }
 }

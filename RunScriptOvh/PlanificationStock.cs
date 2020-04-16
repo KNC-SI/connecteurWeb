@@ -19,7 +19,7 @@ namespace RunScriptOvh
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Parametres.key.Close();
+            
             this.Hide();
         }
 
@@ -124,6 +124,68 @@ namespace RunScriptOvh
 
 
 
+
+        }
+
+        private void PlanificationStock_Load(object sender, EventArgs e)
+        {
+            foreach (string item in Parametres.list)
+            {
+                comboBox1.Items.Add(item);
+
+            }
+
+            try
+            {
+                comboBox1.SelectedItem = "Minutes";
+                if (Parametres.key.GetValue("intervalStock") != null)
+                {
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayStock") + "/" + (string)Parametres.key.GetValue("monthStock") + "/" + (string)Parametres.key.GetValue("yearStock") + " a " + (string)Parametres.key.GetValue("hourStock") + ":" + (string)Parametres.key.GetValue("minStock");
+                    textBox1.Text = (string)Parametres.key.GetValue("intervalStock");
+                    dataGridView1.Rows.Add(Parametres.key.GetValue("debutStock"), Parametres.key.GetValue("finStock"));
+                    comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourStock");
+                    if ("MON" == (string)Parametres.key.GetValue("LundiStock"))
+                    {
+
+                        checkBox1.Checked = true;
+                    }
+                    if ("TUE" == (string)Parametres.key.GetValue("MardiStock"))
+                    {
+                        checkBox2.Checked = true;
+
+                    }
+                    if ("WED" == (string)Parametres.key.GetValue("MecrediStock"))
+                    {
+                        checkBox3.Checked = true;
+
+                    }
+                    if ("THU" == (string)Parametres.key.GetValue("JeudiStock"))
+                    {
+                        checkBox4.Checked = true;
+
+                    }
+                    if ("FRI" == (string)Parametres.key.GetValue("VendrediStock"))
+                    {
+                        checkBox5.Checked = true;
+
+                    }
+                    if ("SAT" == (string)Parametres.key.GetValue("SamediStock"))
+                    {
+                        checkBox6.Checked = true;
+
+                    }
+                    if ("SUN" == (string)Parametres.key.GetValue("DimancheStock"))
+                    {
+                        checkBox7.Checked = true;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }

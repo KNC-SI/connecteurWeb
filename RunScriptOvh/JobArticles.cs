@@ -14,7 +14,11 @@ namespace RunScriptOvh
         {
             string NameCron = "articles";
            Parametres.RunCommand(NameCron);
-            //async
+           Parametres.DerniereExecution("Article");
+            Console.WriteLine("job");
+
+
+
         }
     }
 }

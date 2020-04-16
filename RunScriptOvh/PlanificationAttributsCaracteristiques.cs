@@ -19,7 +19,7 @@ namespace RunScriptOvh
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Parametres.key.Close();
+            
             this.Hide();
         }
 
@@ -125,6 +125,68 @@ namespace RunScriptOvh
 
 
 
+
+        }
+
+        private void PlanificationAttributsCaracteristiques_Load(object sender, EventArgs e)
+        {
+            foreach (string item in Parametres.list)
+            {
+                comboBox1.Items.Add(item);
+
+            }
+
+            try
+            {
+                comboBox1.SelectedItem = "Minutes";
+                if (Parametres.key.GetValue("intervalAttributsCaracteristiques") != null)
+                {
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayAttributsCaracteristiques") + "/" + (string)Parametres.key.GetValue("monthAttributsCaracteristiques") + "/" + (string)Parametres.key.GetValue("yearAttributsCaracteristiques") + " a " + (string)Parametres.key.GetValue("hourAttributsCaracteristiques") + ":" + (string)Parametres.key.GetValue("minAttributsCaracteristiques");
+                    textBox1.Text = (string)Parametres.key.GetValue("intervalAttributsCaracteristiques");
+                    dataGridView1.Rows.Add(Parametres.key.GetValue("debutAttributsCaracteristiques"), Parametres.key.GetValue("finAttributsCaracteristiques"));
+                    comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourAttributsCaracteristiques");
+                    if ("MON" == (string)Parametres.key.GetValue("LundiAttributsCaracteristiques"))
+                    {
+
+                        checkBox1.Checked = true;
+                    }
+                    if ("TUE" == (string)Parametres.key.GetValue("MardiAttributsCaracteristiques"))
+                    {
+                        checkBox2.Checked = true;
+
+                    }
+                    if ("WED" == (string)Parametres.key.GetValue("MecrediAttributsCaracteristiques"))
+                    {
+                        checkBox3.Checked = true;
+
+                    }
+                    if ("THU" == (string)Parametres.key.GetValue("JeudiAttributsCaracteristiques"))
+                    {
+                        checkBox4.Checked = true;
+
+                    }
+                    if ("FRI" == (string)Parametres.key.GetValue("VendrediAttributsCaracteristiques"))
+                    {
+                        checkBox5.Checked = true;
+
+                    }
+                    if ("SAT" == (string)Parametres.key.GetValue("SamediAttributsCaracteristiques"))
+                    {
+                        checkBox6.Checked = true;
+
+                    }
+                    if ("SUN" == (string)Parametres.key.GetValue("DimancheAttributsCaracteristiques"))
+                    {
+                        checkBox7.Checked = true;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }

@@ -18,9 +18,10 @@ namespace RunScriptOvh
             StdSchedulerFactory factory = new StdSchedulerFactory();
             IScheduler scheduler = await factory.GetScheduler();
             await scheduler.Start();
+            
             switch (obj.GetType().Name)
             {
-                case "JobArticle":
+                case "JobArticles":
                     job = JobBuilder.Create<JobArticles>().Build();
                     break;
                 case "JobAttributsCaracteristiques":
@@ -51,7 +52,7 @@ namespace RunScriptOvh
                     job = JobBuilder.Create<JobStock>().Build();
                     break;
                 default:
-                    Console.WriteLine("Default case");
+                    Console.WriteLine(obj.GetType().Name);
                     break;
             }
             
