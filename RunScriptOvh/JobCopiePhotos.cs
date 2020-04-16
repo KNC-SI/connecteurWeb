@@ -9,9 +9,11 @@ namespace RunScriptOvh
 {
     class JobCopiePhotos : IJob
     {
-        public Task Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
-            throw new NotImplementedException();
+            string NameCron = "copytoftp";
+            Parametres.RunCommand(NameCron);
+            //async
         }
     }
 }

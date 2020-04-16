@@ -20,11 +20,35 @@ namespace RunScriptOvh
             await scheduler.Start();
             switch (obj.GetType().Name)
             {
-                case "Job":
-                    job = JobBuilder.Create<Job>().Build();
+                case "JobArticle":
+                    job = JobBuilder.Create<JobArticles>().Build();
                     break;
-                case "Job1":
-                    Console.WriteLine("Case 2");
+                case "JobAttributsCaracteristiques":
+                    job = JobBuilder.Create<JobAttributsCaracteristiques>().Build();
+                    break;
+                case "JobClients":
+                    job = JobBuilder.Create<JobClients>().Build();
+                    break;
+                case "JobCommand":
+                    job = JobBuilder.Create<JobCommand>().Build();
+                    break;
+                case "JobCopiePhotos":
+                    job = JobBuilder.Create<JobCopiePhotos>().Build();
+                    break;
+                case "JobGamme":
+                    job = JobBuilder.Create<JobGamme>().Build();
+                    break;
+                case "JobNettoyagePhotos":
+                    job = JobBuilder.Create<JobNettoyagePhotos>().Build();
+                    break;
+                case "JobPhotos":
+                    job = JobBuilder.Create<JobPhotos>().Build();
+                    break;
+                case "JobPrix":
+                    job = JobBuilder.Create<JobPrix>().Build();
+                    break;
+                case "JobStock":
+                    job = JobBuilder.Create<JobStock>().Build();
                     break;
                 default:
                     Console.WriteLine("Default case");
@@ -43,7 +67,7 @@ namespace RunScriptOvh
                                .StartAt(firstRun).EndAt(lastRun)
                                .WithCronSchedule("0 0/" + intervalInHour + " * ? * " + jour.variable)
                                .Build();
-                            scheduler.ScheduleJob(job, trigger);
+                         scheduler.ScheduleJob(job, trigger);
                         }
                         else
                         {
@@ -52,7 +76,7 @@ namespace RunScriptOvh
                                .StartAt(firstRun).EndAt(lastRun)
                                .WithCronSchedule("0 0 " + intervalInHour + " ? * " + jour.variable)
                                .Build();
-                            scheduler.ScheduleJob(job, trigger);
+                         scheduler.ScheduleJob(job, trigger);
                         }
                     }
                 }
@@ -65,7 +89,7 @@ namespace RunScriptOvh
                            .StartAt(firstRun).EndAt(lastRun)
                            .WithCronSchedule("0 0/" + intervalInHour + " * ? * *")
                            .Build();
-                        scheduler.ScheduleJob(job, trigger);
+                    scheduler.ScheduleJob(job, trigger);
                     }
                     else
                     {
@@ -74,7 +98,7 @@ namespace RunScriptOvh
                            .StartAt(firstRun).EndAt(lastRun)
                            .WithCronSchedule("0 0 " + intervalInHour + " ? * *")
                            .Build();
-                        scheduler.ScheduleJob(job, trigger);
+                     scheduler.ScheduleJob(job, trigger);
                     }
                 }
                

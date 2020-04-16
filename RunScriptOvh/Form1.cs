@@ -17,7 +17,7 @@ namespace RunScriptOvh
         {
             InitializeComponent();
         }
-        public void RunCommand(string NameCron)
+        /*public void RunCommand(string NameCron)
         {
             using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))
             {
@@ -26,7 +26,7 @@ namespace RunScriptOvh
 
                 client.Disconnect();
             }
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -97,115 +97,111 @@ namespace RunScriptOvh
         private void button1_Click_1(object sender, EventArgs e)
         {
             new PlanificationAttributsCaracteristiques().Show();
-            this.Hide();
+             
         }
         private void button2_Click_1(object sender, EventArgs e)
         {
             new PlanificationGammes().Show();
-            this.Hide();
+             
         }
        
         private void button10_Click_1(object sender, EventArgs e)
         {
             new PlanificationClients().Show();
-            this.Hide();
+             
         }
 
         private void button3_Click_2(object sender, EventArgs e)
         {
             new PlanificationArticles().Show();
-            this.Hide();
+             
         }
 
         private void button4_Click_2(object sender, EventArgs e)
         {
             new PlanificationStock().Show();
-            this.Hide();
+             
         }
 
         private void button8_Click_2(object sender, EventArgs e)
         {
              new PlanificationPrix().Show();
-            this.Hide();
+             
         }
 
         private void button7_Click_2(object sender, EventArgs e)
         {
             new PlanificationCopiePhotos().Show();
-            this.Hide();
+             
         }
 
         private void button5_Click_2(object sender, EventArgs e)
         {
             new PlanificationPhotos().Show();
-            this.Hide();
+             
         }
 
         private void button6_Click_2(object sender, EventArgs e)
         {
             new PlanificationNettoyagePhotos().Show();
-            this.Hide();
+             
         }
 
         private void button9_Click_2(object sender, EventArgs e)
         {
             new PlanificationCommande().Show();
-            this.Hide();
+             
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))
-            {
-                client.Connect();
-                client.RunCommand("/usr/local/php7.2/bin/php /homez.727/francoiszi/dev/connect/symfony/bin/console app:cron:attributs");
-
-                client.Disconnect();
-            }
+            
+                string cron = "attributs";
+            Parametres.RunCommand(cron);
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             string cron = "models";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
        
 
         private void button20_Click(object sender, EventArgs e)
         {
             string cron = "articles";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             string cron = "stock";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             string cron = "prix";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             
                 string cron = "copytoftp";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
             string cron = "clean";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             string cron = "photos";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
         }
 
        

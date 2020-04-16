@@ -9,9 +9,11 @@ namespace RunScriptOvh
 {
     class JobNettoyagePhotos : IJob
     {
-        public Task Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
-            throw new NotImplementedException();
+            string NameCron = "clean";
+            Parametres.RunCommand(NameCron);
+            //async
         }
     }
 }

@@ -9,9 +9,11 @@ namespace RunScriptOvh
 {
     class JobStock : IJob
     {
-        public Task Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
-            throw new NotImplementedException();
+            string NameCron = "stock";
+            Parametres.RunCommand(NameCron);
+            //async
         }
     }
 }

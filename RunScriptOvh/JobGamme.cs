@@ -1,5 +1,4 @@
 ﻿using Quartz;
-using Renci.SshNet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace RunScriptOvh
 {
-    class JobArticles : IJob
+    class JobGamme : IJob
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            string NameCron = "articles";
-           Parametres.RunCommand(NameCron);
+            string NameCron = "models";
+            Parametres.RunCommand(NameCron);
             //async
         }
     }

@@ -81,8 +81,18 @@
     <Compile Include="GridTimeSpanPicker.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="JobArticles.cs" />
+    <Compile Include="JobAttributsCaracteristiques.cs" />
+    <Compile Include="JobClients.cs" />
+    <Compile Include="JobCommande.cs" />
+    <Compile Include="JobCopiePhotos.cs" />
+    <Compile Include="JobGamme.cs" />
+    <Compile Include="JobNettoyagePhotos.cs" />
+    <Compile Include="JobPhotos.cs" />
+    <Compile Include="JobPrix.cs" />
+    <Compile Include="JobStock.cs" />
     <Compile Include="jours.cs" />
     <Compile Include="MyScheduler.cs" />
+    <Compile Include="Parametres.cs" />
     <Compile Include="PlanificationArticles.cs">
       <SubType>Form</SubType>
     </Compile>

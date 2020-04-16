@@ -9,9 +9,11 @@ namespace RunScriptOvh
 {
     class JobClients : IJob
     {
-        public Task Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
-            throw new NotImplementedException();
+            string NameCron = "attributs";
+            Parametres.RunCommand(NameCron);
+            //async
         }
     }
 }

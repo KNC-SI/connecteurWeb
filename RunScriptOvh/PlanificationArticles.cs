@@ -14,72 +14,72 @@ namespace RunScriptOvh
 {
     public partial class PlanificationArticles : Form
     {
-        List<string> list = new List<string>() { "Secondes", "Minutes", "Heures" };
-        List<jours> jours = new List<jours>();
-        RegistryKey key = Registry.CurrentUser.CreateSubKey(@"C:\Users\choui\Desktop\test");
-
         public PlanificationArticles()
         {
-            InitializeComponent();
+            InitializeComponent();    
         }
-        
+          
+
 
         private void planification_Load(object sender, EventArgs e)
         {
-            foreach (string item in list)
+            foreach (string item in Parametres.list)
             {
                 comboBox1.Items.Add(item);
           
             }
             
-            //textBox1.Text = key.GetValue("value").ToString();
-            //comboBox1.SelectedValue = key.GetValue("value2");
-            //MessageBox.Show(key.GetValue("Setting1").ToString());
-        }
-
-        
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             try
             {
-               
-
-
-                //storing the values  
-                key.SetValue("value", textBox1.Text.ToString());
-                key.SetValue("value2", comboBox1.SelectedItem);
-                /*int width = int.Parse(key.GetValue("value").ToString());
-                int height = int.Parse(key.GetValue("value2").ToString());*/
-               /* if (comboBox1.SelectedItem == "Secondes")
+                comboBox1.SelectedItem = "Minutes";
+                if (Parametres.key.GetValue("intervalArticle") != null)
                 {
-                    MyScheduler.IntervalInSeconds(10, 19,13,44, int.Parse(textBox1.Text),
-                           () => {
-                               Console.WriteLine("//here write the code that you want to schedule 15 Seconds");
-                               MessageBox.Show("//here write the code that you want to schedule 15 Seconds");
-                           });
+                    textBox1.Text = (string)Parametres.key.GetValue("intervalArticle");
+                    dataGridView1.Rows.Add(Parametres.key.GetValue("debutArticle"), Parametres.key.GetValue("finArticle"));
+                    comboBox1.SelectedItem= (string)Parametres.key.GetValue("intervalMinOrHourArticle");
+                    if ("MON" == (string)Parametres.key.GetValue("LundiArticle"))
+                    {
+                        
+                        checkBox1.Checked = true;
+                    }
+                    if ("TUE" == (string)Parametres.key.GetValue("MardiArticle"))
+                    {
+                        checkBox2.Checked = true;
+                       
+                    }
+                    if ("WED" == (string)Parametres.key.GetValue("MecrediArticle"))
+                    {
+                        checkBox3.Checked = true;
+                        
+                    }
+                    if ("THU" == (string)Parametres.key.GetValue("JeudiArticle"))
+                    {
+                        checkBox4.Checked = true;
+                        
+                    }
+                    if ("FRI" == (string)Parametres.key.GetValue("VendrediArticle"))
+                    {
+                        checkBox5.Checked = true;
+                        
+                    }
+                    if ("SAT" == (string)Parametres.key.GetValue("SamediArticle"))
+                    {
+                        checkBox6.Checked = true;
+                        
+                    }
+                    if ("SUN" == (string)Parametres.key.GetValue("DimancheArticle"))
+                    {
+                        checkBox7.Checked = true;
+                        
+                    }
                 }
-                else if (comboBox1.SelectedItem == "Minutes")
-                {
-                    MyScheduler.IntervalInMinutes(12,20,16,20, int.Parse(textBox1.Text),
-                        () => {
-                            Console.WriteLine("//here write the code that you want to schedule 30 Minutes");
-                            MessageBox.Show("//here write the code that you want to schedule 30 Minutes");
-                        });
-                }
-                else
-                {
-                    MyScheduler.IntervalInHours(17, 31, 17,31, int.Parse(textBox1.Text),
-                        () => {
-                            Console.WriteLine("//here write the code that you want to schedule 1 Hour");
-                        });
-                }*/
-                key.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("test " + ex);
+
+                MessageBox.Show(ex.Message);
             }
+     
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -89,14 +89,11 @@ namespace RunScriptOvh
 
         private void button2_Click(object sender, EventArgs e)
         {
-           // DateTime date = dateTimePicker1.Value;
-            Scheduler sc = new Scheduler();
-            //sc.Start(12, 20, 14, 42, int.Parse(textBox1.Text));
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            new Form1().Show();
+            Parametres.key.Close();
             this.Hide();
         }
 
@@ -104,62 +101,94 @@ namespace RunScriptOvh
         {
             try
             {
-                //test
-                jours.Clear();
-                key.SetValue("value", textBox1.Text.ToString());
-                key.SetValue("value2", comboBox1.SelectedItem);
-                key.SetValue("value3", dataGridView1.Rows[0].Cells[0].Value.ToString());
-                key.SetValue("value4", dataGridView1.Rows[0].Cells[1].Value.ToString());
-                if (checkBox1.Checked)
-                {
-                    jours.Add(new jours() { Name = "LundiArticle", value = 1,variable= "MON" });
-                }
-                if (checkBox2.Checked)
-                {
-                    jours.Add(new jours() { Name = "MardiArticle", value = 1, variable = "TUE" });
-                }
-                if (checkBox3.Checked)
-                {
-                    jours.Add(new jours() { Name = "MecrediArticle", value = 1, variable = "WED" });
-                }
-                if (checkBox4.Checked)
-                {
-                    jours.Add(new jours() { Name = "JeudiArticle", value = 1, variable = "THU" });
-                }
-                if (checkBox5.Checked)
-                {
-                    jours.Add(new jours() { Name = "VendrediArticle", value = 1, variable = "FRI" });
-                }
-                if (checkBox6.Checked)
-                {
-                    jours.Add(new jours() { Name = "SamediArticle", value = 1, variable = "SAT" });
-                }
-                if (checkBox7.Checked)
-                {
-                    jours.Add(new jours() { Name = "DimancheArticle", value = 1, variable = "SUN" });
-                }
-                foreach (jours jour in jours)
-                {
-                    key.SetValue(jour.Name, jour);
-                }
-                MessageBox.Show(key.GetValue("value") + "" + key.GetValue("value2") + "" + key.GetValue("value3") + "" + key.GetValue("value4"));
-                foreach (jours jour in jours)
-                {
-                    Console.WriteLine(key.GetValue(jour.Name));
-                }
-                key.Close();
-                Scheduler sc = new Scheduler();
+                Parametres.jours.Clear();
                 TimeSpan tstar = TimeSpan.Parse(dataGridView1.Rows[0].Cells[0].Value.ToString());
                 TimeSpan tend = TimeSpan.Parse(dataGridView1.Rows[0].Cells[1].Value.ToString());
-                int StratM= tstar.Minutes;
-                int StartH = tstar.Hours;
-                int EndM = tend.Minutes;
-                int EndH = tend.Hours;
+                if (tstar.CompareTo(tend)==-1)
+                {
+                    
+                        if (Parametres.key.GetValue("intervalArticle") != null)
+                        {
 
-                sc.Start(StartH, StratM, EndH, EndM, int.Parse(textBox1.Text),new Job(), jours,comboBox1.SelectedItem.ToString());
-             
+                            Parametres.deleteKey(Parametres.ValueKeyArticle);
+                            Parametres.ValueKeyArticle.Clear();
+                    }
+                    
+                    
+                    
+                    if (!string.IsNullOrWhiteSpace(textBox1.Text))
+                    {
+                        if (comboBox1.SelectedItem != null)
+                        {
+                            Parametres.key.SetValue("intervalArticle", textBox1.Text.ToString());
+                            Parametres.key.SetValue("intervalMinOrHourArticle", comboBox1.SelectedItem);
+                            Parametres.key.SetValue("debutArticle", dataGridView1.Rows[0].Cells[0].Value.ToString());
+                            Parametres.key.SetValue("finArticle", dataGridView1.Rows[0].Cells[1].Value.ToString());
+                            Parametres.ValueKeyArticle.Add("intervalArticle");
+                            Parametres.ValueKeyArticle.Add("intervalMinOrHourArticle");
+                            Parametres.ValueKeyArticle.Add("debutArticle");
+                            Parametres.ValueKeyArticle.Add("finArticle");
+                            if (checkBox1.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "LundiArticle",  variable = "MON" });
+                               
+                            }
+                            if (checkBox2.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "MardiArticle",  variable = "TUE" });
 
+                            }
+                            if (checkBox3.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "MecrediArticle",  variable = "WED" });
+                            }
+                            if (checkBox4.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "JeudiArticle",  variable = "THU" });
+                            }
+                            if (checkBox5.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "VendrediArticle",  variable = "FRI" });
+                            }
+                            if (checkBox6.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "SamediArticle",  variable = "SAT" });
+                            }
+                            if (checkBox7.Checked)
+                            {
+                                Parametres.jours.Add(new jours() { Name = "DimancheArticle",  variable = "SUN" });
+                            }
+                            foreach (jours jour in Parametres.jours)
+                            {
+                                Parametres.key.SetValue(jour.Name, jour.variable);
+                                Parametres.ValueKeyArticle.Add(jour.Name);
 
+                            }
+                            
+                            Scheduler sc = new Scheduler();
+                            int StratM = tstar.Minutes;
+                            int StartH = tstar.Hours;
+                            int EndM = tend.Minutes;
+                            int EndH = tend.Hours;
+                            sc.Start(StartH, StratM, EndH, EndM, int.Parse(textBox1.Text), new JobArticles(), Parametres.jours, comboBox1.SelectedItem.ToString());
+                        }
+                        else
+                        {
+                            MessageBox.Show("Merci de Sélectionnez votre champ interval !!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Merci de remplir votre champ interval !!");
+                        textBox1.Focus();
+                    }
+                    
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Vérifier votre date !!");
+                }
             }
             catch (Exception ex)
             {
@@ -173,5 +202,7 @@ namespace RunScriptOvh
         {
             
         }
+
+        
     }
 }
