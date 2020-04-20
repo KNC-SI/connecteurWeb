@@ -141,7 +141,7 @@ namespace RunScriptOvh
                 comboBox1.SelectedItem = "Minutes";
                 if (Parametres.key.GetValue("intervalAttributsCaracteristiques") != null)
                 {
-                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayAttributsCaracteristiques") + "/" + (string)Parametres.key.GetValue("monthAttributsCaracteristiques") + "/" + (string)Parametres.key.GetValue("yearAttributsCaracteristiques") + " a " + (string)Parametres.key.GetValue("hourAttributsCaracteristiques") + ":" + (string)Parametres.key.GetValue("minAttributsCaracteristiques");
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayattributs") + "/" + (string)Parametres.key.GetValue("monthattributs") + "/" + (string)Parametres.key.GetValue("yearattributs") + " a " + (string)Parametres.key.GetValue("hourattributs") + ":" + (string)Parametres.key.GetValue("minattributs");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalAttributsCaracteristiques");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutAttributsCaracteristiques"), Parametres.key.GetValue("finAttributsCaracteristiques"));
                     comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourAttributsCaracteristiques");

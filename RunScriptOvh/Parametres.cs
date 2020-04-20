@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
+using System.ServiceProcess;
 
 namespace RunScriptOvh
 {
@@ -23,7 +25,24 @@ namespace RunScriptOvh
         static public List<string> ValueKeyPrix = new List<string>();
         static public List<string> ValueKeyStock = new List<string>();
         static public RegistryKey key = Registry.CurrentUser.CreateSubKey(@"C:\Users\choui\Desktop\test");
+       // static public ServiceGet.HelloServiceClient client = new ServiceGet.HelloServiceClient();
 
+        static public void startservice()
+        {
+            ServiceController service = new ServiceController("RunWindowsService");
+
+            if ((service.Status.Equals(ServiceControllerStatus.Stopped)) ||
+
+                (service.Status.Equals(ServiceControllerStatus.StopPending))) {
+                key.SetValue("active", "1");
+                service.Start();
+
+             }else{
+                key.SetValue("active", "0");
+                service.Stop();
+              }
+           
+        }
         static public void RunCommand(string NameCron)
         {
             using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))

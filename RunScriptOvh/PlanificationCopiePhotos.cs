@@ -140,7 +140,7 @@ namespace RunScriptOvh
                 comboBox1.SelectedItem = "Minutes";
                 if (Parametres.key.GetValue("intervalCopiePhotos") != null)
                 {
-                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayCopiePhotos") + "/" + (string)Parametres.key.GetValue("monthCopiePhotos") + "/" + (string)Parametres.key.GetValue("yearCopiePhotos") + " a " + (string)Parametres.key.GetValue("hourCopiePhotos") + ":" + (string)Parametres.key.GetValue("minCopiePhotos");
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("daycopytoftp") + "/" + (string)Parametres.key.GetValue("monthcopytoftp") + "/" + (string)Parametres.key.GetValue("yearcopytoftp") + " a " + (string)Parametres.key.GetValue("hourcopytoftp") + ":" + (string)Parametres.key.GetValue("mincopytoftp");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalCopiePhotos");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutCopiePhotos"), Parametres.key.GetValue("finCopiePhotos"));
                     comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourCopiePhotos");

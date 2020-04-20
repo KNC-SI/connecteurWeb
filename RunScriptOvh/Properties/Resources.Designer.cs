@@ -73,6 +73,26 @@ namespace RunScriptOvh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cute_Ball_Go_icon_V {
+            get {
+                object obj = ResourceManager.GetObject("Cute-Ball-Go-icon-V", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cute_Ball_Shutdown_icon_R {
+            get {
+                object obj = ResourceManager.GetObject("Cute-Ball-Shutdown-icon-R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left01 {
             get {
                 object obj = ResourceManager.GetObject("left01", resourceCulture);

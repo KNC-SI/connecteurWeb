@@ -32,10 +32,10 @@ namespace RunScriptOvh
             
             try
             {
-                comboBox1.SelectedItem = "Minutes";
+                comboBox1.SelectedItem = Parametres.list.First();
                 if (Parametres.key.GetValue("intervalArticle") != null)
                 {
-                    label6.Text = "Le "+ (string)Parametres.key.GetValue("dayArticle") + "/"+ (string)Parametres.key.GetValue("monthArticle") + "/"+ (string)Parametres.key.GetValue("yearArticle") + " a "+ (string)Parametres.key.GetValue("hourArticle") + ":"+ (string)Parametres.key.GetValue("minArticle");
+                    label6.Text = "Le "+ (string)Parametres.key.GetValue("dayarticles") + "/"+ (string)Parametres.key.GetValue("montharticles") + "/"+ (string)Parametres.key.GetValue("yeararticles") + " a "+ (string)Parametres.key.GetValue("hourarticles") + ":"+ (string)Parametres.key.GetValue("minarticles");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalArticle");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutArticle"), Parametres.key.GetValue("finArticle"));
                     comboBox1.SelectedItem= (string)Parametres.key.GetValue("intervalMinOrHourArticle");

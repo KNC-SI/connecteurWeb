@@ -140,7 +140,7 @@ namespace RunScriptOvh
                 comboBox1.SelectedItem = "Minutes";
                 if (Parametres.key.GetValue("intervalGamme") != null)
                 {
-                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayGamme") + "/" + (string)Parametres.key.GetValue("monthGamme") + "/" + (string)Parametres.key.GetValue("yearGamme") + " a " + (string)Parametres.key.GetValue("hourGamme") + ":" + (string)Parametres.key.GetValue("minGamme");
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("daymodels") + "/" + (string)Parametres.key.GetValue("monthmodels") + "/" + (string)Parametres.key.GetValue("yearmodels") + " a " + (string)Parametres.key.GetValue("hourmodels") + ":" + (string)Parametres.key.GetValue("minmodels");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalGamme");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutGamme"), Parametres.key.GetValue("finGamme"));
                     comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourGamme");

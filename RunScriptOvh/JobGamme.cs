@@ -11,9 +11,13 @@ namespace RunScriptOvh
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            string NameCron = "models";
-            Parametres.RunCommand(NameCron);
-            Parametres.DerniereExecution("Gamme");
+            
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                string NameCron = "models";
+                Parametres.RunCommand(NameCron);
+                Parametres.DerniereExecution(NameCron);
+            }
         }
     }
 }

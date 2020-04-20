@@ -13,9 +13,13 @@ namespace RunScriptOvh
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
+
+            //Parametres.startservice();
+            
         }
         
 
@@ -29,6 +33,21 @@ namespace RunScriptOvh
 
         private void Form1_Load(object sender, EventArgs e)
         {
+                //Parametres.startservice();
+                if ("1"==((string)Parametres.key.GetValue("active")))
+                {
+                    pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
+                button26.Enabled = false;
+                button25.Enabled = true;
+            }
+                else
+                {
+                    pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Shutdown_icon_R;
+                    button25.Enabled = false;
+                    button26.Enabled = true;
+            }
+            
+
             this.Opacity = 100;
             this.Show();
             this.SendToBack();
@@ -104,14 +123,14 @@ namespace RunScriptOvh
             
                 string cron = "attributs";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("AttributsCaracteristiques");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             string cron = "models";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("Gamme");
+            Parametres.DerniereExecution(cron);
         }
        
 
@@ -119,21 +138,21 @@ namespace RunScriptOvh
         {
             string cron = "articles";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("Articles");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             string cron = "stock";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("Stock");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             string cron = "prix";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("Prix");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -141,21 +160,21 @@ namespace RunScriptOvh
             
                 string cron = "copytoftp";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("CopiePhotos");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
             string cron = "clean";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("NettoyagePhotos");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             string cron = "photos";
             Parametres.RunCommand(cron);
-            Parametres.DerniereExecution("Photos");
+            Parametres.DerniereExecution(cron);
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -172,6 +191,83 @@ namespace RunScriptOvh
         {
             this.Hide();
             e.Cancel = true;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in groupBox3.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    if (cb.Checked )
+                    {
+                        if (cb.Name!= "checkBox11")
+                        {
+                            Parametres.RunCommand(cb.Name);
+                            Parametres.DerniereExecution(cb.Name);
+                        }
+                    }
+                    
+                }
+            }
+        }
+        private void checkBox11_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in groupBox3.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    if (cb.Checked == false)
+                    {
+                        cb.Checked = true;
+                        checkBox11.Checked = true;
+                        
+
+                    }
+                    else
+                    {
+                        cb.Checked = false;
+                        checkBox11.Checked = false;
+
+                    }
+                }
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            Parametres.startservice();
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
+                button26.Enabled = false;
+                button25.Enabled = true;
+            }
+            else
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Shutdown_icon_R;
+                button25.Enabled = false;
+                button26.Enabled = true;
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            Parametres.startservice();
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
+                button26.Enabled = false;
+                button25.Enabled = true;
+            }
+            else
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Shutdown_icon_R;
+                button25.Enabled = false;
+                button26.Enabled = true;
+            }
         }
     }
 }

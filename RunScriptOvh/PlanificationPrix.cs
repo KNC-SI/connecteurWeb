@@ -140,7 +140,7 @@ namespace RunScriptOvh
                 comboBox1.SelectedItem = "Minutes";
                 if (Parametres.key.GetValue("intervalPrix") != null)
                 {
-                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayPrix") + "/" + (string)Parametres.key.GetValue("monthPrix") + "/" + (string)Parametres.key.GetValue("yearPrix") + " a " + (string)Parametres.key.GetValue("hourPrix") + ":" + (string)Parametres.key.GetValue("minPrix");
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayprix") + "/" + (string)Parametres.key.GetValue("monthprix") + "/" + (string)Parametres.key.GetValue("yearprix") + " a " + (string)Parametres.key.GetValue("hourprix") + ":" + (string)Parametres.key.GetValue("minprix");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalPrix");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutPrix"), Parametres.key.GetValue("finPrix"));
                     comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourPrix");

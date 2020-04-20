@@ -12,10 +12,15 @@ namespace RunScriptOvh
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            string NameCron = "articles";
-           Parametres.RunCommand(NameCron);
-           Parametres.DerniereExecution("Article");
-            Console.WriteLine("job");
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                string NameCron = "articles";
+                Parametres.RunCommand(NameCron);
+                Parametres.DerniereExecution(NameCron);
+            }
+            
+            
+            
 
 
 

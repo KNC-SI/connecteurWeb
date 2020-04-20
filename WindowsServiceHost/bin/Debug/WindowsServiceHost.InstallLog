@@ -1,0 +1,41 @@
+﻿Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   i = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+   logtoconsole = 
+Installation du service HelloWindowsService en cours...
+Création d'une source EventLog HelloWindowsService dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   i = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+   logtoconsole = 
+Restauration de l'état précédent du journal des événements pour la source HelloWindowsService.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+Installation du service HelloWindowsService en cours...
+Création d'une source EventLog HelloWindowsService dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+Restauration de l'état précédent du journal des événements pour la source HelloWindowsService.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+Installation du service RunWindowsService en cours...
+Le service RunWindowsService a été installé avec succès.
+Création d'une source EventLog RunWindowsService dans le journal Application...
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe

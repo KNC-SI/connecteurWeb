@@ -11,9 +11,13 @@ namespace RunScriptOvh
     {
         public async Task Execute(IJobExecutionContext context)
         {
-            string NameCron = "copytoftp";
-            Parametres.RunCommand(NameCron);
-            Parametres.DerniereExecution("CopiePhotos");
+            
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                string NameCron = "copytoftp";
+                            Parametres.RunCommand(NameCron);
+                            Parametres.DerniereExecution(NameCron);
+            }
         }
     }
 }

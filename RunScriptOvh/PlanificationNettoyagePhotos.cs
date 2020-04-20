@@ -144,7 +144,7 @@ namespace RunScriptOvh
                 comboBox1.SelectedItem = "Minutes";
                 if (Parametres.key.GetValue("intervalNettoyagePhotos") != null)
                 {
-                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayNettoyagePhotos") + "/" + (string)Parametres.key.GetValue("monthNettoyagePhotos") + "/" + (string)Parametres.key.GetValue("yearNettoyagePhotos") + " a " + (string)Parametres.key.GetValue("hourNettoyagePhotos") + ":" + (string)Parametres.key.GetValue("minNettoyagePhotos");
+                    label6.Text = "Le " + (string)Parametres.key.GetValue("dayclean") + "/" + (string)Parametres.key.GetValue("monthclean") + "/" + (string)Parametres.key.GetValue("yearclean") + " a " + (string)Parametres.key.GetValue("hourclean") + ":" + (string)Parametres.key.GetValue("minclean");
                     textBox1.Text = (string)Parametres.key.GetValue("intervalNettoyagePhotos");
                     dataGridView1.Rows.Add(Parametres.key.GetValue("debutNettoyagePhotos"), Parametres.key.GetValue("finNettoyagePhotos"));
                     comboBox1.SelectedItem = (string)Parametres.key.GetValue("intervalMinOrHourNettoyagePhotos");
