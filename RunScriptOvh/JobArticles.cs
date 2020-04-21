@@ -14,13 +14,14 @@ namespace RunScriptOvh
         {
             if ("1" == ((string)Parametres.key.GetValue("active")))
             {
+                
                 string NameCron = "articles";
                 Parametres.RunCommand(NameCron);
                 Parametres.DerniereExecution(NameCron);
             }
-            
-            
-            
+
+
+
 
 
 

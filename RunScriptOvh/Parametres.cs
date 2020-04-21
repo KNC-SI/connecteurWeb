@@ -27,20 +27,41 @@ namespace RunScriptOvh
         static public RegistryKey key = Registry.CurrentUser.CreateSubKey(@"C:\Users\choui\Desktop\test");
        // static public ServiceGet.HelloServiceClient client = new ServiceGet.HelloServiceClient();
 
-        static public void startservice()
+        static public void startservice(String formload)
         {
             ServiceController service = new ServiceController("RunWindowsService");
+            if (formload.Equals("formload"))
+            {
+                if ((service.Status.Equals(ServiceControllerStatus.Stopped)) ||
 
-            if ((service.Status.Equals(ServiceControllerStatus.Stopped)) ||
+                (service.Status.Equals(ServiceControllerStatus.StopPending)))
+                {
+                    key.SetValue("active", "0");
+                }
+                else
+                {
+                    key.SetValue("active", "1");
+                    
+                }
+            }
+            else
+            {
+                if ((service.Status.Equals(ServiceControllerStatus.Stopped)) ||
 
-                (service.Status.Equals(ServiceControllerStatus.StopPending))) {
-                key.SetValue("active", "1");
-                service.Start();
+               (service.Status.Equals(ServiceControllerStatus.StopPending)))
+                {
+                    key.SetValue("active", "1");
 
-             }else{
-                key.SetValue("active", "0");
-                service.Stop();
-              }
+                    service.Start();
+
+                }
+                else
+                {
+                    key.SetValue("active", "0");
+                    service.Stop();
+                }
+            }
+            
            
         }
         static public void RunCommand(string NameCron)

@@ -33,7 +33,7 @@ namespace RunScriptOvh
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                //Parametres.startservice();
+                Parametres.startservice("formload");
                 if ("1"==((string)Parametres.key.GetValue("active")))
                 {
                     pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
@@ -238,7 +238,7 @@ namespace RunScriptOvh
 
         private void button26_Click(object sender, EventArgs e)
         {
-            Parametres.startservice();
+            Parametres.startservice("");
             if ("1" == ((string)Parametres.key.GetValue("active")))
             {
                 pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
@@ -255,7 +255,7 @@ namespace RunScriptOvh
 
         private void button25_Click(object sender, EventArgs e)
         {
-            Parametres.startservice();
+            Parametres.startservice("");
             if ("1" == ((string)Parametres.key.GetValue("active")))
             {
                 pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
