@@ -29,12 +29,25 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button25 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
@@ -82,20 +95,9 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button26 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -104,7 +106,6 @@
             this.tabPage3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -119,10 +120,39 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(29, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1096, 727);
+            this.groupBox1.Size = new System.Drawing.Size(887, 727);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Instance :";
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(745, 154);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(98, 28);
+            this.button26.TabIndex = 31;
+            this.button26.Text = "Démarrer";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(745, 188);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(98, 27);
+            this.button25.TabIndex = 85;
+            this.button25.Text = "Arréter";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(770, 77);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
             // 
             // tabControl3
             // 
@@ -131,7 +161,7 @@
             this.tabControl3.Location = new System.Drawing.Point(6, 52);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(879, 669);
+            this.tabControl3.Size = new System.Drawing.Size(691, 669);
             this.tabControl3.TabIndex = 29;
             // 
             // tabPage6
@@ -140,7 +170,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(871, 640);
+            this.tabPage6.Size = new System.Drawing.Size(683, 640);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "francoispinton";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -166,16 +196,6 @@
             this.tabPage1.Size = new System.Drawing.Size(867, 611);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Synchronisations";
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(949, 203);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(98, 27);
-            this.button25.TabIndex = 85;
-            this.button25.Text = "Arréter";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // groupBox3
             // 
@@ -226,6 +246,116 @@
             this.groupBox3.Size = new System.Drawing.Size(614, 442);
             this.groupBox3.TabIndex = 84;
             this.groupBox3.TabStop = false;
+            // 
+            // button24
+            // 
+            this.button24.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button24.Location = new System.Drawing.Point(34, 406);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(45, 23);
+            this.button24.TabIndex = 124;
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button14
+            // 
+            this.button14.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button14.Location = new System.Drawing.Point(539, 344);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(45, 23);
+            this.button14.TabIndex = 123;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button15.Location = new System.Drawing.Point(539, 373);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(45, 23);
+            this.button15.TabIndex = 122;
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button16
+            // 
+            this.button16.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button16.Location = new System.Drawing.Point(539, 283);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(45, 23);
+            this.button16.TabIndex = 121;
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button17
+            // 
+            this.button17.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button17.Location = new System.Drawing.Point(539, 312);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(45, 23);
+            this.button17.TabIndex = 120;
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button18
+            // 
+            this.button18.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button18.Location = new System.Drawing.Point(539, 254);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(45, 23);
+            this.button18.TabIndex = 119;
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button19.Location = new System.Drawing.Point(539, 225);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(45, 23);
+            this.button19.TabIndex = 118;
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button20.Location = new System.Drawing.Point(539, 167);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(45, 23);
+            this.button20.TabIndex = 117;
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button21.Location = new System.Drawing.Point(539, 196);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(45, 23);
+            this.button21.TabIndex = 116;
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button22.Location = new System.Drawing.Point(539, 138);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(45, 23);
+            this.button22.TabIndex = 115;
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.Image = global::RunScriptOvh.Properties.Resources.next;
+            this.button23.Location = new System.Drawing.Point(539, 109);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(45, 23);
+            this.button23.TabIndex = 114;
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button9
             // 
@@ -551,6 +681,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button27);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.Controls.Add(this.label11);
@@ -628,7 +759,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(871, 640);
+            this.tabPage7.Size = new System.Drawing.Size(683, 640);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Knco";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -668,149 +799,30 @@
             this.comboBox1.Size = new System.Drawing.Size(141, 24);
             this.comboBox1.TabIndex = 25;
             // 
-            // button26
+            // button27
             // 
-            this.button26.Location = new System.Drawing.Point(949, 169);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(98, 28);
-            this.button26.TabIndex = 31;
-            this.button26.Text = "Démarrer";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(974, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button24
-            // 
-            this.button24.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button24.Location = new System.Drawing.Point(34, 406);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(45, 23);
-            this.button24.TabIndex = 124;
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // button14
-            // 
-            this.button14.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button14.Location = new System.Drawing.Point(539, 344);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(45, 23);
-            this.button14.TabIndex = 123;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            this.button15.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button15.Location = new System.Drawing.Point(539, 373);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(45, 23);
-            this.button15.TabIndex = 122;
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button16
-            // 
-            this.button16.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button16.Location = new System.Drawing.Point(539, 283);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(45, 23);
-            this.button16.TabIndex = 121;
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button17
-            // 
-            this.button17.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button17.Location = new System.Drawing.Point(539, 312);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 23);
-            this.button17.TabIndex = 120;
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button18
-            // 
-            this.button18.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button18.Location = new System.Drawing.Point(539, 254);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(45, 23);
-            this.button18.TabIndex = 119;
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // button19
-            // 
-            this.button19.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button19.Location = new System.Drawing.Point(539, 225);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(45, 23);
-            this.button19.TabIndex = 118;
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // button20
-            // 
-            this.button20.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button20.Location = new System.Drawing.Point(539, 167);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(45, 23);
-            this.button20.TabIndex = 117;
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // button21
-            // 
-            this.button21.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button21.Location = new System.Drawing.Point(539, 196);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(45, 23);
-            this.button21.TabIndex = 116;
-            this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
-            // button22
-            // 
-            this.button22.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button22.Location = new System.Drawing.Point(539, 138);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(45, 23);
-            this.button22.TabIndex = 115;
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // button23
-            // 
-            this.button23.Image = global::RunScriptOvh.Properties.Resources.next;
-            this.button23.Location = new System.Drawing.Point(539, 109);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(45, 23);
-            this.button23.TabIndex = 114;
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.button27.Location = new System.Drawing.Point(295, 206);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(122, 28);
+            this.button27.TabIndex = 27;
+            this.button27.Text = "Tester";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1130, 754);
+            this.ClientSize = new System.Drawing.Size(923, 754);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Opacity = 0D;
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -821,7 +833,6 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -895,6 +906,7 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button27;
     }
 }
 

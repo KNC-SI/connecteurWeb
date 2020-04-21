@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
 using System.ServiceProcess;
+using MySql.Data.MySqlClient;
+using MySql.Data;
 
 namespace RunScriptOvh
 {
@@ -94,6 +96,51 @@ namespace RunScriptOvh
             Parametres.key.SetValue("year" + name, now.Year.ToString());
 
         }
-        
+       static public bool check_connection(string serverName, string userName, string password,string dbName)
+
+        {
+
+            bool result = false;
+            //string serverName = address; // Address server (for local database "localhost")
+            //string userName = name;  // user name
+            //string dbName = basename; //Name database
+            //string port = "3306"; // Port for connection
+            //string password = password; // Password for connection 
+            //string conn = "server=" + serverName +
+            //           ";user=" + userName +
+            //           ";database=" + dbName +
+            //           //";port=" + port +
+            //           ";password=" + password + ";";
+            string conn = "Server = "+ serverName+ "; UserId = " + userName + "; Password = " + password + "; Database ="+ dbName;
+
+            MySqlConnection connection = new MySqlConnection("datasource=francoiszilive.mysql.db;username=francoiszilive;password=76GHbFdv9AHfm");
+
+            try
+
+            {
+                
+
+                connection.Open();
+
+                result = true;
+
+                connection.Close();
+
+            }
+
+            catch(Exception ex)
+
+            {
+
+                Console.WriteLine(ex.Message);
+                
+                result = false;
+
+            }
+
+            return result;
+
+        }
+
     }
 }

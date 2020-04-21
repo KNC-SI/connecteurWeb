@@ -48,9 +48,9 @@ namespace RunScriptOvh
             }
             
 
-            this.Opacity = 100;
+            /*this.Opacity = 100;
             this.Show();
-            this.SendToBack();
+            this.SendToBack();*/
         }
 
 
@@ -268,6 +268,11 @@ namespace RunScriptOvh
                 button25.Enabled = false;
                 button26.Enabled = true;
             }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+          Console.WriteLine(  Parametres.check_connection("francoiszilive.mysql.db", "francoiszilive", "76GHbFdv9AHfm", "francoiszilive"));
         }
     }
 }
