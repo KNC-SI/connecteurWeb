@@ -26,7 +26,7 @@ namespace RunScriptOvh
         static public List<string> ValueKeyPhotos = new List<string>();
         static public List<string> ValueKeyPrix = new List<string>();
         static public List<string> ValueKeyStock = new List<string>();
-        static public RegistryKey key = Registry.CurrentUser.CreateSubKey(@"C:\Users\choui\Desktop\test");
+        static public RegistryKey key = Registry.CurrentUser.CreateSubKey(@"C:\Users\DIRSAP\Desktop\test");
        // static public ServiceGet.HelloServiceClient client = new ServiceGet.HelloServiceClient();
 
         static public void startservice(String formload)

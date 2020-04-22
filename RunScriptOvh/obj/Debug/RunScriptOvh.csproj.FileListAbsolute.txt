@@ -106,7 +106,6 @@ C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\Quartz.xml
 C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\Renci.SshNet.xml
 C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.csprojAssemblyReference.cache
 C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.Form1.resources
-C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.Form2.resources
 C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.PlanificationArticles.resources
 C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.PlanificationAttributsCaracteristiques.resources
 C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.PlanificationClients.resources
@@ -161,3 +160,8 @@ C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.csproj.
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.csproj.CopyComplete
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.exe
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.pdb
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\Bukimedia.PrestaSharp.dll
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\RestSharp.dll
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\Google.Protobuf.dll
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\RunScriptOvh\bin\Debug\RestSharp.xml

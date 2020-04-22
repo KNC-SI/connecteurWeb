@@ -308,7 +308,7 @@ namespace RunScriptOvh
                     connection.Open();
                     DataSet ds = new DataSet();
                     adapter.Fill(ds, "admin");
-                    dataGridView1.DataSource = ds.Tables["admin"];
+                    //dataGridView1.DataSource = ds.Tables["admin"];
                     MessageBox.Show("Connected !!");
                 }
                 else
