@@ -1,4 +1,5 @@
-﻿using Renci.SshNet;
+﻿using MySql.Data.MySqlClient;
+using Renci.SshNet;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +34,12 @@ namespace RunScriptOvh
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                Parametres.startservice("formload");
+            
+            textBox12.Enabled = false;
+            textBox11.Text = (string)Parametres.key.GetValue("ServeurMySql" + textBox12.Text);
+            textBox10.Text = (string)Parametres.key.GetValue("UserMySql" + textBox12.Text);
+            textBox9.Text = (string)Parametres.key.GetValue("PassMySql" + textBox12.Text);
+            Parametres.startservice("formload");
                 if ("1"==((string)Parametres.key.GetValue("active")))
                 {
                     pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
@@ -272,7 +278,54 @@ namespace RunScriptOvh
 
         private void button27_Click(object sender, EventArgs e)
         {
-          Console.WriteLine(  Parametres.check_connection("francoiszilive.mysql.db", "francoiszilive", "76GHbFdv9AHfm", "francoiszilive"));
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                //Parametres.check_connection(textBox11.Text, textBox10.Text, textBox9.Text, textBox12.Text);
+            }
+            
         }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Parametres.key.SetValue("Database"+textBox12.Text, textBox12.Text);
+            Parametres.key.SetValue("ServeurMySql" + textBox12.Text, textBox11.Text);
+            Parametres.key.SetValue("UserMySql" + textBox12.Text, textBox10.Text);
+            Parametres.key.SetValue("PassMySql" + textBox12.Text, textBox9.Text);
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                //Parametres.check_connections(textBox11.Text, textBox10.Text, textBox9.Text, textBox12.Text);
+                if (Parametres.check_connections(textBox11.Text, textBox10.Text, textBox9.Text, textBox12.Text))
+                {
+                    string conn = "server=" + textBox11.Text +
+                       ";user=" + textBox10.Text +
+                       ";database=" + textBox12.Text +
+                       ";port=3308" +
+                       ";password='" + textBox9.Text + "';";
+                    //string conn = "Server = "+ serverName+ "; UserId = " + userName + "; Password = " + password + "; Database ="+ dbName;
+
+                    MySqlConnection connection = new MySqlConnection(conn);
+                    MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM admin", connection);
+                    connection.Open();
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds, "admin");
+                    dataGridView1.DataSource = ds.Tables["admin"];
+                    MessageBox.Show("Connected !!");
+                }
+                else
+                {
+                        MessageBox.Show("Not Connected !!");
+                }
+            }
+
+            
+        }
+
+        private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
+        }
+
+        
     }
 }

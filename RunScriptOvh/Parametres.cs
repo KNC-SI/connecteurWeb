@@ -96,7 +96,7 @@ namespace RunScriptOvh
             Parametres.key.SetValue("year" + name, now.Year.ToString());
 
         }
-       static public bool check_connection(string serverName, string userName, string password,string dbName)
+       static public bool check_connections(string serverName, string userName, string password,string dbName)
 
         {
 
@@ -106,14 +106,14 @@ namespace RunScriptOvh
             //string dbName = basename; //Name database
             //string port = "3306"; // Port for connection
             //string password = password; // Password for connection 
-            //string conn = "server=" + serverName +
-            //           ";user=" + userName +
-            //           ";database=" + dbName +
-            //           //";port=" + port +
-            //           ";password=" + password + ";";
-            string conn = "Server = "+ serverName+ "; UserId = " + userName + "; Password = " + password + "; Database ="+ dbName;
+            string conn = "server=" + serverName +
+                       ";user=" + userName +
+                       ";database=" + dbName +
+                       ";port=3308"+
+                       ";password='"+password+"';";
+            //string conn = "Server = "+ serverName+ "; UserId = " + userName + "; Password = " + password + "; Database ="+ dbName;
 
-            MySqlConnection connection = new MySqlConnection("datasource=francoiszilive.mysql.db;username=francoiszilive;password=76GHbFdv9AHfm");
+            MySqlConnection connection = new MySqlConnection(conn);
 
             try
 

@@ -135,6 +135,8 @@ C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Owin.dll
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Quartz.dll
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Renci.SshNet.dll
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RestSharp.dll
+C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Google.Protobuf.dll
+C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Microsoft.Owin.xml
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Newtonsoft.Json.xml
@@ -142,7 +144,6 @@ C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Quartz.pdb
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Quartz.xml
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\Renci.SshNet.xml
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RestSharp.xml
-C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.csprojAssemblyReference.cache
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.Form1.resources
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.PlanificationArticles.resources
 C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\obj\Debug\RunScriptOvh.PlanificationAttributsCaracteristiques.resources
