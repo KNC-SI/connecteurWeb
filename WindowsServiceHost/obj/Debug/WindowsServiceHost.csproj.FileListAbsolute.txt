@@ -7,3 +7,12 @@ C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsService
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.csproj.CoreCompileInputs.cache
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.exe
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.pdb
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe.config
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.pdb
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.csprojAssemblyReference.cache
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.ProjectInstaller.resources
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.csproj.GenerateResource.cache
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.exe
+C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.pdb
