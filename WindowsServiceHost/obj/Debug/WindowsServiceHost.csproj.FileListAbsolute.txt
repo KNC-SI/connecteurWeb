@@ -1,6 +1,5 @@
-C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe.config
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
-C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.pdb
+C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe.config
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.csprojAssemblyReference.cache
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.ProjectInstaller.resources
 C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\obj\Debug\WindowsServiceHost.csproj.GenerateResource.cache

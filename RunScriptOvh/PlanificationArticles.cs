@@ -24,7 +24,7 @@ namespace RunScriptOvh
         private void planification_Load(object sender, EventArgs e)
         {
             
-            foreach (string item in Parametres.list)
+           foreach (string item in Parametres.list)
             {
                 comboBox1.Items.Add(item);
           
