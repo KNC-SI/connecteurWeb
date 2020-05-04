@@ -39,3 +39,16 @@ Les paramètres affectés sont :
    logtoconsole = 
    logfile = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
    assemblypath = C:\Users\choui\Desktop\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+Installation de l'assembly 'C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
+Installation du service RunWindowsService en cours...
+Le service RunWindowsService a été installé avec succès.
+Création d'une source EventLog RunWindowsService dans le journal Application...
+Validation de l'assembly 'C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.InstallLog
+   assemblypath = C:\Users\DIRSAP\Documents\GitHub\connecteurWeb\WindowsServiceHost\bin\Debug\WindowsServiceHost.exe
