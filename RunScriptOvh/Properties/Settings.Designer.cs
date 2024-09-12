@@ -43,5 +43,16 @@ namespace RunScriptOvh.Properties {
                 return ((global::System.Drawing.Point)(this["test1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=francoiszidev;password=;persistsecurityinf" +
+            "o=True;port=3308")]
+        public string francoiszidev {
+            get {
+                return ((string)(this["francoiszidev"]));
+            }
+        }
     }
 }

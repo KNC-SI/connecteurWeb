@@ -64,10 +64,6 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.button1_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
@@ -82,9 +78,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 17);
+            this.label6.Size = new System.Drawing.Size(96, 17);
             this.label6.TabIndex = 40;
-            this.label6.Text = "Le 31/02/2020 a 16:43";
+            this.label6.Text = "Le 0/0/0 a 0:0";
             // 
             // button2
             // 
@@ -242,7 +238,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(325, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(416, 150);
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 

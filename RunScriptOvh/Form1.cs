@@ -1,4 +1,5 @@
-﻿using Renci.SshNet;
+﻿using MySql.Data.MySqlClient;
+using Renci.SshNet;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,79 +14,49 @@ namespace RunScriptOvh
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
-        }
-        public void RunCommand(string NameCron)
-        {
-            using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))
-            {
-                client.Connect();
-                client.RunCommand("/usr/local/php7.2/bin/php /homez.727/francoiszi/dev/connect/symfony/bin/console app:cron:" + NameCron);
 
-                client.Disconnect();
-            }
+            //Parametres.startservice();
+            
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
             
-            // For Interval in Seconds 
-            // This Scheduler will start at 11:10 and call after every 15 Seconds
-            // IntervalInSeconds(start_hour, start_minute, seconds)
-            /*MyScheduler.IntervalInSeconds(12, 31, 60,
-            () => {
-                Console.WriteLine("//here write the code that you want to schedule 15 Seconds");
-            });*/
-            // For Interval in Minutes 
-            // This Scheduler will start at 22:00 and call after every 30 Minutes
-            // IntervalInSeconds(start_hour, start_minute, minutes)
-            /*MyScheduler.IntervalInMinutes(22, 00, 30,
-            () => {
-                Console.WriteLine("//here write the code that you want to schedule 30 Minutes");
-            });*/
-            // For Interval in Hours 
-            // This Scheduler will start at 9:44 and call after every 1 Hour
-            // IntervalInSeconds(start_hour, start_minute, hours)
-            /*MyScheduler.IntervalInHours(9, 44, 1,
-            () => {
-                Console.WriteLine("//here write the code that you want to schedule 1 Hour");
-            });*/
-            // For Interval in Seconds 
-            // This Scheduler will start at 17:22 and call after every 3 Days
-            // IntervalInSeconds(start_hour, start_minute, days)
-           // DateTime date1 = new DateTime(2020, 4, 4);
-            /*DayOfWeek day = DateTime.Now.DayOfWeek;
-            if ((day == DayOfWeek.Saturday) || (day == DayOfWeek.Sunday))
-            {
-                Console.WriteLine("This is a weekend :" + day);
-                MyScheduler.IntervalInDays(17, 22, 3,
-           () => {
-               Console.WriteLine("//here write the code that you want to schedule 3 Days");
-           });
-            }
-            else
-            {
-                Console.WriteLine("This is not a weekend :" + day);
-            }
-           
-            Console.ReadLine();
-
-            /*using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))
-            {
-                client.Connect();
-                client.RunCommand("/usr/local/php7.2/bin/php /homez.727/francoiszi/dev/connect/symfony/bin/console app:cron:prix");
-
-                client.Disconnect();
-            }*/
+            
 
         }
        
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            textBox12.Enabled = false;
+            textBox11.Text = (string)Parametres.key.GetValue("ServeurMySql" + textBox12.Text);
+            textBox10.Text = (string)Parametres.key.GetValue("UserMySql" + textBox12.Text);
+            textBox9.Text = (string)Parametres.key.GetValue("PassMySql" + textBox12.Text);
+            Parametres.startservice("formload");
+                if ("1"==((string)Parametres.key.GetValue("active")))
+                {
+                    pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
+                button26.Enabled = false;
+                button25.Enabled = true;
+            }
+                else
+                {
+                    pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Shutdown_icon_R;
+                    button25.Enabled = false;
+                    button26.Enabled = true;
+            }
+            
 
+            /*this.Opacity = 100;
+            this.Show();
+            this.SendToBack();*/
         }
 
 
@@ -97,117 +68,264 @@ namespace RunScriptOvh
         private void button1_Click_1(object sender, EventArgs e)
         {
             new PlanificationAttributsCaracteristiques().Show();
-            this.Hide();
+             
         }
         private void button2_Click_1(object sender, EventArgs e)
         {
             new PlanificationGammes().Show();
-            this.Hide();
+             
         }
        
         private void button10_Click_1(object sender, EventArgs e)
         {
             new PlanificationClients().Show();
-            this.Hide();
+             
         }
 
         private void button3_Click_2(object sender, EventArgs e)
         {
             new PlanificationArticles().Show();
-            this.Hide();
+             
         }
 
         private void button4_Click_2(object sender, EventArgs e)
         {
             new PlanificationStock().Show();
-            this.Hide();
+             
         }
 
         private void button8_Click_2(object sender, EventArgs e)
         {
              new PlanificationPrix().Show();
-            this.Hide();
+             
         }
 
         private void button7_Click_2(object sender, EventArgs e)
         {
             new PlanificationCopiePhotos().Show();
-            this.Hide();
+             
         }
 
         private void button5_Click_2(object sender, EventArgs e)
         {
             new PlanificationPhotos().Show();
-            this.Hide();
+             
         }
 
         private void button6_Click_2(object sender, EventArgs e)
         {
             new PlanificationNettoyagePhotos().Show();
-            this.Hide();
+             
         }
 
         private void button9_Click_2(object sender, EventArgs e)
         {
             new PlanificationCommande().Show();
-            this.Hide();
+             
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            using (var client = new SshClient("ssh.cluster006.hosting.ovh.net", "francoiszi", "Vhs67hjYa8om"))
-            {
-                client.Connect();
-                client.RunCommand("/usr/local/php7.2/bin/php /homez.727/francoiszi/dev/connect/symfony/bin/console app:cron:attributs");
-
-                client.Disconnect();
-            }
+            
+                string cron = "attributs";
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             string cron = "models";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
        
 
         private void button20_Click(object sender, EventArgs e)
         {
             string cron = "articles";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             string cron = "stock";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             string cron = "prix";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             
                 string cron = "copytoftp";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
             string cron = "clean";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             string cron = "photos";
-            this.RunCommand(cron);
+            Parametres.RunCommand(cron);
+            Parametres.DerniereExecution(cron);
         }
 
-       
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            e.Cancel = true;
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in groupBox3.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    if (cb.Checked )
+                    {
+                        if (cb.Name!= "checkBox11")
+                        {
+                            Parametres.RunCommand(cb.Name);
+                            Parametres.DerniereExecution(cb.Name);
+                        }
+                    }
+                    
+                }
+            }
+        }
+        private void checkBox11_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in groupBox3.Controls)
+            {
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    if (cb.Checked == false)
+                    {
+                        cb.Checked = true;
+                        checkBox11.Checked = true;
+                        
+
+                    }
+                    else
+                    {
+                        cb.Checked = false;
+                        checkBox11.Checked = false;
+
+                    }
+                }
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            Parametres.startservice("");
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
+                button26.Enabled = false;
+                button25.Enabled = true;
+            }
+            else
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Shutdown_icon_R;
+                button25.Enabled = false;
+                button26.Enabled = true;
+            }
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            Parametres.startservice("");
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Go_icon_V;
+                button26.Enabled = false;
+                button25.Enabled = true;
+            }
+            else
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.Cute_Ball_Shutdown_icon_R;
+                button25.Enabled = false;
+                button26.Enabled = true;
+            }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                //Parametres.check_connection(textBox11.Text, textBox10.Text, textBox9.Text, textBox12.Text);
+            }
+            
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Parametres.key.SetValue("Database"+textBox12.Text, textBox12.Text);
+            Parametres.key.SetValue("ServeurMySql" + textBox12.Text, textBox11.Text);
+            Parametres.key.SetValue("UserMySql" + textBox12.Text, textBox10.Text);
+            Parametres.key.SetValue("PassMySql" + textBox12.Text, textBox9.Text);
+            if ("1" == ((string)Parametres.key.GetValue("active")))
+            {
+                //Parametres.check_connections(textBox11.Text, textBox10.Text, textBox9.Text, textBox12.Text);
+                if (Parametres.check_connections(textBox11.Text, textBox10.Text, textBox9.Text, textBox12.Text))
+                {
+                    string conn = "server=" + textBox11.Text +
+                       ";user=" + textBox10.Text +
+                       ";database=" + textBox12.Text +
+                       ";port=3308" +
+                       ";password='" + textBox9.Text + "';";
+                    //string conn = "Server = "+ serverName+ "; UserId = " + userName + "; Password = " + password + "; Database ="+ dbName;
+
+                    MySqlConnection connection = new MySqlConnection(conn);
+                    MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM admin", connection);
+                    connection.Open();
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds, "admin");
+                    //dataGridView1.DataSource = ds.Tables["admin"];
+                    MessageBox.Show("Connected !!");
+                }
+                else
+                {
+                        MessageBox.Show("Not Connected !!");
+                }
+            }
+
+            
+        }
+
+        private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
+        }
+
+        
     }
 }

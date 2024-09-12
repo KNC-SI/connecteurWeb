@@ -1,0 +1,162 @@
+﻿Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Suppression du fichier InstallState, car aucun programme d'installation n'est présent.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Création d'une source EventLog Service1 dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Restauration de l'état précédent du journal des événements pour la source Service1.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Le service Service1 a été installé avec succès.
+Création d'une source EventLog Service1 dans le journal Application...
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Désinstallation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Suppression de la source EventLog Service1.
+Avertissement : la source Service1 n'est pas inscrite sur l'ordinateur local.
+Le service Service1 est en cours de suppression du système...
+Le service Service1 a été retiré avec succès du système.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Création d'une source EventLog Service1 dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Restauration de l'état précédent du journal des événements pour la source Service1.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Création d'une source EventLog Service1 dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Restauration de l'état précédent du journal des événements pour la source Service1.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Création d'une source EventLog Service1 dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Restauration de l'état précédent du journal des événements pour la source Service1.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Création d'une source EventLog Service1 dans le journal Application...
+Restauration de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Restauration de l'état précédent du journal des événements pour la source Service1.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Le service Service1 a été installé avec succès.
+Création d'une source EventLog Service1 dans le journal Application...
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation du service Service1 en cours...
+Le service Service1 a été installé avec succès.
+Création d'une source EventLog Service1 dans le journal Application...
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   i = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+   logtoconsole = 
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   i = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+   logtoconsole = 
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Suppression du fichier InstallState, car aucun programme d'installation n'est présent.
+Désinstallation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   logtoconsole = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Installation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   i = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+   logtoconsole = 
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Validation de l'assembly 'C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe'.
+Les paramètres affectés sont :
+   i = 
+   logfile = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.InstallLog
+   assemblypath = C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe
+   logtoconsole = 
+Aucun programme d'installation public avec l'attribut RunInstallerAttribute.Yes n'a été trouvé dans l'assembly C:\Users\choui\Desktop\connecteurWeb\RunScriptOvh\bin\Debug\RunScriptOvh.exe.
+Suppression du fichier InstallState, car aucun programme d'installation n'est présent.
